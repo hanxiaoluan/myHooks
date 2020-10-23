@@ -7,7 +7,7 @@ module.exports = {
 	'extends': [
 		'eslint:recommended',
 		'plugin:react/recommended',
-		'plugin:@typescript-eslint/eslint-recommended',
+		
 	],
 	'globals': {
 		'Atomics': 'readonly',
@@ -37,7 +37,6 @@ module.exports = {
 			'error',
 			'never'
 		],
-
 		'object-curly-spacing': ['error', 'always'],
 		'array-bracket-spacing': ['error', 'always'],
 		'key-spacing': ['error', { 'beforeColon': false, 'afterColon': true }],
@@ -50,10 +49,10 @@ module.exports = {
 		'no-multi-spaces': 'error',
 		'lines-between-class-members': 'error',
 		'newline-per-chained-call': ['error', { 'ignoreChainWithDepth': 1 }],
-		// 'react/jsx-closing-tag-location': 'error',
+		'react/jsx-closing-tag-location': 'error',
 		'react/jsx-curly-spacing': ['error', { 'when': 'never', 'children': false }],
-		'react/jsx-uses-react': 0,
-		'react/jsx-one-expression-per-line': ['error', { 'allow': 'literal' | 'single-child' }],
-		'lines-around-comment': ['error', { 'beforeBlockComment': true, 'beforeLineComment': true }]
+		"react/jsx-uses-react": 'error',
+		"react/jsx-uses-vars": 'error',
+		'lines-around-comment': ['error', { 'beforeBlockComment': true, 'beforeLineComment': true }],
 	}
 }
