@@ -1,10 +1,10 @@
 import React from 'react'
 import './App.css'
-import Cart from './hooks/useChecked/Cart'
+import Counter from './hooks/useDocumentTitle/useDocumentTitle'
 function App() {
 	return (
 		<div className="App">
-			<Cart />
+			<Counter />
 		</div>
 	)
 }

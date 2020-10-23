@@ -54,5 +54,6 @@ module.exports = {
 		"react/jsx-uses-react": 'error',
 		"react/jsx-uses-vars": 'error',
 		'lines-around-comment': ['error', { 'beforeBlockComment': true, 'beforeLineComment': true }],
+		'space-infix-ops': "error"
 	}
 }
