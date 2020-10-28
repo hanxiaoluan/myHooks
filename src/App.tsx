@@ -1,10 +1,12 @@
 import React from 'react'
 import './App.css'
-import Counter from './hooks/useDocumentTitle/useDocumentTitle'
+import Battery from './hooks/useBattery/Battery'
+import useGeolocation from './hooks/useGeolocation/useGeolocation'
 function App() {
+	useGeolocation()
 	return (
 		<div className="App">
-			<Counter />
+			<Battery />
 		</div>
 	)
 }
