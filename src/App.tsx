@@ -1,12 +1,24 @@
 import React from 'react'
 import './App.css'
-import Battery from './hooks/useBattery/Battery'
-import useGeolocation from './hooks/useGeolocation/useGeolocation'
+import { useHover } from 'react-use'
+const Demo = () => {
+	const element = (hovered: any) =>
+		<div>
+			Hover me! {hovered && 'Thanks!'}
+		</div>
+	const [ hoverable, hovered ] = useHover(element)
+	console.log(hoverable)
+	return (
+		<div>
+			{hoverable}
+			<div>{hovered ? 'HOVERED' : ''}</div>
+		</div>
+	)
+}
 function App() {
-	useGeolocation()
 	return (
 		<div className="App">
-			<Battery />
+			<Demo />
 		</div>
 	)
 }
