@@ -23,7 +23,8 @@ module.exports = {
 	},
 	'plugins': [
 		'react',
-		'@typescript-eslint'
+		'@typescript-eslint',
+		'react-hooks'
 	],
 	'rules': {
 		'indent':[
@@ -55,5 +56,7 @@ module.exports = {
 		'react/jsx-curly-spacing': ['error', { 'when': 'never', 'children': false }],
 		'lines-around-comment': ['error', { 'beforeBlockComment': true, 'beforeLineComment': true }],
 		'space-infix-ops': "error",
+		"react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+		"react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
 	}
 }
